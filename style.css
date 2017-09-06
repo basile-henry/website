@@ -1,0 +1,57 @@
+html, body{
+  background: #f0f0f0;
+}
+
+@media screen and (orientation: portrait) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .container {
+    flex-direction: row;
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 500px;
+  margin: auto;
+}
+
+.item {
+  display: flex;
+  flex: 1;
+  width: 250px;
+  height: 250px;
+  margin: auto;
+}
+
+.circular-photo {
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  background: url(basile_profile.jpg) no-repeat;
+}
+
+.list {
+  display: block;
+  width: 200px;
+  margin: auto;
+}
+
+ul {
+  padding: 0;
+}
+
+a {
+  font-size: 25px;
+  font-family: 'Open Sans', 'Helvetica Light', 'Helvetica Neue', 'Arial Narrow', 'Helvetica', 'Arial', 'serif'
+}
